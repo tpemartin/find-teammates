@@ -1,25 +1,36 @@
 import logo from './logo.svg';
 import './App.css';
-
+import config from './config.json'
+import {useFetch} from "usehooks-ts"
+import { Children } from 'react';
+import AdCards from './readValidAds';
+import PostAd from './postAd';
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+  var {data, isLoading} = useFetch(config.appscript)
+  var ads, keys
+  if(data){
+    [ads, keys] = data
+    console.log(data)
+    console.log(ads)
+    console.log(keys)
+  }
+
+  let appContent= data?(
+    <AdGallery>
+      <AdCards ads={ads} keys={keys}/>
+      <PostAd/>
+    </AdGallery>):(
+    <div>Loading...</div> 
+    )
+  return  <div className="App">
+      {appContent}
     </div>
-  );
+}
+function AdGallery({children}){
+  return <div className='ad-gallery'>
+    {children}
+  </div>
 }
 
 export default App;

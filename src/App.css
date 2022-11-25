@@ -12,7 +12,18 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.ad-gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 14px;
+  margin: 10px 30px;
+}
+.adcard {
+  position: relative;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -27,7 +38,24 @@
 .App-link {
   color: #61dafb;
 }
-
+.contact-info {
+  justify-content: center;
+}
+.description {
+  padding: 20px 0;
+}
+.match {
+  position: absolute;
+  right: 3px;
+  top: 55px;
+  font-size: 3rem;
+  color: red !important;
+  transform: rotate(45deg);
+}
+.postad {
+  position: fixed !important;
+  bottom: 36px;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
