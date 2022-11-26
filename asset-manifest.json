@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/find-teammates/static/css/main.a00782f5.css",
-    "main.js": "/find-teammates/static/js/main.794c492c.js",
+    "main.js": "/find-teammates/static/js/main.b8a37004.js",
     "static/js/787.61539153.chunk.js": "/find-teammates/static/js/787.61539153.chunk.js",
     "static/media/logo.svg": "/find-teammates/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/find-teammates/index.html",
     "main.a00782f5.css.map": "/find-teammates/static/css/main.a00782f5.css.map",
-    "main.794c492c.js.map": "/find-teammates/static/js/main.794c492c.js.map",
+    "main.b8a37004.js.map": "/find-teammates/static/js/main.b8a37004.js.map",
     "787.61539153.chunk.js.map": "/find-teammates/static/js/787.61539153.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a00782f5.css",
-    "static/js/main.794c492c.js"
+    "static/js/main.b8a37004.js"
   ]
 }
